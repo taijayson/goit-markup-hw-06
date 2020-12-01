@@ -375,7 +375,7 @@ img {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color: #ffffff;
+  background-color: var(--hero-color);
 }
 
 .social__list-link:hover {
@@ -389,7 +389,7 @@ img {
 .social__list-svg {
   width: 20px;
   height: 20px;
-  fill: var(--hero-color);
+  fill: var(--social-color);
 }
 
 /* ========== END TEAM ========== */
@@ -506,6 +506,10 @@ img {
 
 .footer__social-color {
   background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer__link-color {
+  fill: var(--hero-color);
 }
 
 /* ========== END FOOTER ========== */
