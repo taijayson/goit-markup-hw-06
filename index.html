@@ -64,6 +64,53 @@
       <!--Backdrop -->
       <div class="hero__backdrop is-hidden" data-modal>
         <div class="hero__modal">
+          <h2 class="hero__modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+          <form class="hero__modal-form">
+            <div class="hero__modal-area">
+              <label class="hero__modal-label" for="name">Имя</label>
+              <div class="hero__modal-wrapper">
+                <input class="hero__modal-input" type="text" name="name" id="name">
+                <svg class="hero__modal-svg">
+                  <use href="./images/sprite.svg#man"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="hero__modal-area">
+              <label class="hero__modal-label" for="tel">Телефон</label>
+              <div class="hero__modal-wrapper">
+                <input class="hero__modal-input" type="tel" name="tel" id="tel">
+                <svg class="hero__modal-svg">
+                  <use href="./images/sprite.svg#smartphone2"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="hero__modal-area">
+              <label class="hero__modal-label" for="email">Почта</label>
+              <div class="hero__modal-wrapper">
+                <input class="hero__modal-input" type="email" name="email" id="email">
+                <svg class="hero__modal-svg">
+                  <use href="./images/sprite.svg#mail2"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="hero__modal-area">
+              <label class="hero__modal-label" for="comment">Комментарий</label>
+              <textarea class="hero__modal-comment" name="comment" id="comment" rows="" placeholder="Введите текст"></textarea>
+            </div>
+            <div class="hero__modal-checkbox-wrapper">
+              <input class="hero__modal-input-check" type="checkbox" name="checkboxl" id="checkbox">
+              <label class="hero__modal-check-label" for="checkbox">
+                Соглашаюсь с рассылкой и принимаю
+                <a href="" class="hero__modal-conditions">
+                  Условия договора
+                </a>
+              </label>
+              <svg class="hero__modal-check-svg">
+                <use href="./images/sprite.svg#check"></use>
+              </svg>
+            </div>
+            <button class="modal-btn" type="submit">Отправить</button>
+          </form>
           <button type="button" class="hero__modalbtn" data-modal-close>
             <svg class="hero__modalbtn-svg">
               <use href="./images/sprite.svg#close"></use>
@@ -71,7 +118,6 @@
           </button>
         </div>
       </div>
-      <script src="./js/modal.js"></script>
       <!-- Наши качества -->
       <section class="about">
         <div class="container">
@@ -423,7 +469,19 @@
             </li>
           </ul>
         </div>
+        <div class="footer__subscribe">
+          <p class="footer__subscribe-agit">Подпишитесь на рассылку</p>
+          <div>
+            <input class="footer__subscribe-input" type="email" name="name" id="subscribe" placeholder="E-mail">
+            <button type="submit" class="footer__subscribe-button">Подписаться
+              <svg class="footer__subscribe-svg">
+                <use href="./images/sprite.svg#send">
+              </svg>
+            </button>
+          </div>
+        </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
